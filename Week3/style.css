@@ -17,7 +17,7 @@ h3 {
 }
 
 .my-class {
-  color: blueviolet;
+  color: rgb(145, 101, 186);
 }
 p > strong {
   color: black;
@@ -30,7 +30,7 @@ span {
 /* link this to keep colors */
 
 p {
-  color: magenta;
+  color: rgb(193, 91, 193);
   border: 1px solid red;
   padding: 30px;
   width: fit-content;

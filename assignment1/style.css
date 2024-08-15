@@ -1,0 +1,56 @@
+* {
+  color: hotpink;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* this is a universal selector */
+
+h1 {
+  color: limegreen;
+}
+
+p,
+h3 {
+  color: yellow;
+  text-align: r;
+}
+
+.my-class {
+  color: blueviolet;
+}
+p > strong {
+  color: black;
+}
+
+span {
+  display: block;
+}
+
+/* link this to keep colors */
+
+p {
+  color: magenta;
+  border: 1px solid red;
+  padding: 30px;
+  width: fit-content;
+  background-color: rgb(116, 218, 123);
+}
+article {
+  text-align: center;
+  border: 1px dashed lime;
+  padding: 10px;
+  background-color: rgb(221, 234, 155);
+}
+/* * .padding-style {padding: 1px;
+border: 1px solid blue;}*/
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Timmana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
