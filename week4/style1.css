@@ -19,20 +19,27 @@ body {
 
 .outer {
   border: 2px dashed white;
-  width: 400px;
+  min-width: 400px;
   height: 200px;
   color: gray;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /*align-items: center; */
   gap: 10px;
+  /* flex-direction: column; */
 }
 p {
   padding: 10px;
 }
 .limebox {
   background-color: limegreen;
+  flex: 1;
 }
 .coralbox {
   background-color: coral;
+  flex: 1;
+}
+.plumbox {
+  background-color: orange;
+  flex: 1;
 }
