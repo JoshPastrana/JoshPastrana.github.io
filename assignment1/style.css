@@ -1,55 +1,28 @@
-/* .text-center { 
-  text-align: center;
-}*/
-/* Centers all of the text in the center */
 h1 {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+/* As my website is slightly inspired by his design I wanted to try and create similar elements in my own website.
+Most of the text color and fonts are all a simple white and apple-like font like his website */
 h2 {
   color: #1a1f71;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+/* Despite similarities I wanted to make my name and student number of a different color, 
+otherwise all three titles would have been same the same color, which looked a little off to me   */
 h3 {
   color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.center-list {
-  text-align: center; /* Centers the content of the container */
-}
-
-.small-border-list {
-  border: 1px solid white; /* 1px thin border, solid style, white color */
-  padding: 34px; /* Adds space inside the border */
-  background-color: #777373; /* Gray background color */
-  width: fit-content; /* Adjusts the width to fit the content */
-  margin: 10px auto; /* Centers the list on the page */
-}
-
-.center-list ol {
-  display: inline-block; /* Allows the list to be treated as an inline element */
-  text-align: left; /* Aligns the text within the list items */
-  margin: 0; /* Resets default margin */
-  padding: 20; /* Resets default padding */
-  list-style-position: inside; /* Positions list numbers inside the text area */
-} /*The code to center and align the list in question 2  */
-
-p {
-  font-size: large;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 30px;
-  width: auto;
-  background-color: #777373;
-}
-
 body {
   background-color: #708d93;
-  text-align: center;
+  /* I used the same backgorund color as rich browns website, So when his 
+  link is clicked it has a smoother transition as they are both the same color */
+  text-align: center; /* Making sure all the body text is in the center */
   margin: auto;
   max-width: 1000px;
   align-items: center;
@@ -61,3 +34,33 @@ body {
   color: #ffffff;
   font-size: 1.1rem;
 }
+/* I kept it well spaced out ensuring the text, size and position are all to my liking */
+
+.center-list {
+  text-align: center; /* Putting the list in the center as well */
+}
+
+.small-border-list {
+  border: 1px solid white; /* Using a thin solid 1px border on the list, the color white helps match with the website */
+  padding: 30px; /* For the spacing of the border next to the text I wanted to create a decent amount between them */
+  background-color: #777373; /*like the other answer boxes I wanted to stick to grey for the list as well*/
+}
+
+.center-list ol {
+  display: inline-block;
+  text-align: left;
+  margin: 8px;
+  padding: 20;
+  list-style-position: inside;
+}
+/* Continued styling the list to make it as clean and well aligned as possible */
+p {
+  font-size: large;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 30px;
+  width: auto;
+  background-color: #777373;
+}
+/* The styling for the paragraphs was also kept simple, 
+sticking to white and a decent sized font for all the texts */
