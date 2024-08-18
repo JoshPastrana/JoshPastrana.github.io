@@ -6,7 +6,7 @@ h1 {
 /* As my website is slightly inspired by his design I wanted to try and create similar elements in my own website.
 Most of the text color and fonts are all a simple white and apple-like font like his website */
 h2 {
-  color: #1a1f71;
+  color: #000000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -16,6 +16,13 @@ h3 {
   color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.styled-image {
+  width: 310px; /* Setting the image to a good size*/
+  margin: auto;
+  display: block;
+  padding: 10px;
+  border: 3px solid black; /*Set a black border as I believe it suits the image*/
 }
 
 body {
@@ -41,7 +48,7 @@ body {
 }
 
 .small-border-list {
-  border: 1px solid white; /* Using a thin solid 1px border on the list, the color white helps match with the website */
+  border: 3px solid white; /* Using a thin solid 1px border on the list, the color white helps match with the website */
   padding: 30px; /* For the spacing of the border next to the text I wanted to create a decent amount between them */
   background-color: #777373; /*like the other answer boxes I wanted to stick to grey for the list as well*/
 }
@@ -57,7 +64,7 @@ body {
 p {
   font-size: large;
   color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   padding: 30px;
   width: auto;
   background-color: #777373;
