@@ -19,14 +19,13 @@ h3 {
 }
 
 .center-list {
-  text-align: center;
-  /* Centers the content of the container */
+  text-align: center; /* Centers the content of the container */
 }
+
 .small-border-list {
-  border: 1px solid rgb(255, 255, 255); /* 1px thin border, solid style, black color */
-  padding: 5px; /* Optional: Adds a little space between the list items and the border */
-  background-color: #777373;
-  padding: 30px;
+  border: 1px solid white; /* 1px thin border, solid style, white color */
+  padding: 30px; /* Adds space inside the border */
+  background-color: #777373; /* Gray background color */
   width: fit-content; /* Adjusts the width to fit the content */
   margin: 10px auto; /* Centers the list on the page */
 }
@@ -35,7 +34,7 @@ h3 {
   display: inline-block; /* Allows the list to be treated as an inline element */
   text-align: left; /* Aligns the text within the list items */
   margin: 0; /* Resets default margin */
-  padding: 0; /* Resets default padding */
+  padding: 20; /* Resets default padding */
   list-style-position: inside; /* Positions list numbers inside the text area */
 } /*The code to center and align the list in question 2  */
 
