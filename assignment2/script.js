@@ -4,8 +4,8 @@ const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
 const fullscreenBtn = document.querySelector("#fullscreen-btn");
 const fullscreenImg = document.querySelector("#fullscreen-img");
-const muteBtn = document.querySelector("#mute-btn"); // Mute button
-const muteImg = document.querySelector("#mute-img"); // Mute icon
+const muteBtn = document.querySelector("#mute-btn"); // adding a mute button
+const muteImg = document.querySelector("#mute-img"); // Icons I linked for the mute button
 
 video.removeAttribute("controls");
 video.addEventListener("timeupdate", updateProgressBar);
@@ -31,7 +31,7 @@ fullscreenBtn.addEventListener("click", toggleFullscreen);
 document.addEventListener("fullscreenchange", handleFullscreenChange);
 document.addEventListener("webkitfullscreenchange", handleFullscreenChange); // Safari
 document.addEventListener("mozfullscreenchange", handleFullscreenChange); // Firefox
-document.addEventListener("MSFullscreenChange", handleFullscreenChange); // Edge
+document.addEventListener("MSFullscreenChange", handleFullscreenChange); // Edge-ARE THESE NECCESSARY?
 
 function toggleFullscreen() {
   if (!document.fullscreenElement) {
@@ -47,16 +47,17 @@ function toggleFullscreen() {
     fullscreenImg.src =
       "https://img.icons8.com/ios-glyphs/30/full-screen--v1.png";
   }
+  // Do i need an exit with image
 }
 
 // Mute/Unmute functionality
 function toggleMute() {
   if (video.muted) {
     video.muted = false;
-    muteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"; // Unmute icon
+    muteImg.src = "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png"; // Unmute icon
   } else {
     video.muted = true;
-    muteImg.src = "https://img.icons8.com/ios-glyphs/30/mute.png"; // Mute icon
+    muteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"; // Mute icon
   }
 }
 
