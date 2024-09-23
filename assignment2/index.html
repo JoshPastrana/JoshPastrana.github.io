@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- add the font family of your choice -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -12,17 +11,16 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Media Player Website</h1>
+      <h1>MUSIC</h1>
     </header>
 
     <!-- Navigation Section -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
-        <!-- Add or remove navigation items as needed -->
+        <li><a href="2nd.html">Home</a></li>
+        <li><a href="3rd.html">Videos</a></li>
+        <li><a href="4th.html">Music</a></li>
+        <li><a href="5th.html">Playlists</a></li>
       </ul>
     </nav>
 
@@ -46,18 +44,49 @@
               height="24"
             />
           </button>
-          <!-- add the missing buttons or functionality here -->
+
+          <!-- Fullscreen Button -->
+          <button id="fullscreen-btn">
+            <img
+              id="fullscreen-img"
+              src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+              alt="Fullscreen Button"
+              width="24"
+              height="24"
+            />
+          </button>
+
+          <!-- Mute/Unmute Button -->
+          <button id="mute-btn" onclick="toggleMute()">
+            <img
+              id="mute-img"
+              src="https://img.icons8.com/ios-glyphs/30/high-volume--v2.png"
+              alt="Mute Button"
+              width="24"
+              height="24"
+            />
+          </button>
+
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
         </div>
       </div>
-
       <!-- Additional Content Section -->
       <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
+        <h2>The birth of music art</h2>
+        <p>
+          Music, as an art form, explores a vast range of genres, from classical
+          and jazz to electronic and folk. It serves not only as entertainment
+          but also as a medium for personal and collective expression. Musicians
+          craft compositions that reflect society, emotions, and imagination,
+          making music an essential, timeless cultural influence. Through
+          rhythm, melody, and harmony, music connects people, evokes feelings,
+          and inspires creativity. Its ability to transcend language barriers
+          and cultural differences has made it a powerful, unifying force
+          throughout history, continuing to evolve while remaining rooted in its
+          capacity to move and inspire.
+        </p>
       </section>
     </main>
 
