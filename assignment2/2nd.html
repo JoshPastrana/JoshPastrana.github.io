@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>PEOPLE</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="4th.html">Music</a></li>
+        <li><a href="5th.html">Playlists</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="container">
+      <!-- Media Player Section -->
+      <div class="media-player">
+        <video id="custom-video-player" controls>
+          <source
+            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="custom-controls">
+          <button id="play-pause-btn" onclick="togglePlayPause()">
+            <img
+              id="play-pause-img"
+              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+              alt="Play Button"
+              width="24"
+              height="24"
+            />
+          </button>
+
+          <!-- Fullscreen Button -->
+          <button id="fullscreen-btn">
+            <img
+              id="fullscreen-img"
+              src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+              alt="Fullscreen Button"
+              width="24"
+              height="24"
+            />
+          </button>
+
+          <!-- Mute/Unmute Button -->
+          <button id="mute-btn" onclick="toggleMute()">
+            <img
+              id="mute-img"
+              src="https://img.icons8.com/ios-glyphs/30/high-volume--v2.png"
+              alt="Mute Button"
+              width="24"
+              height="24"
+            />
+          </button>
+
+          <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Content Section -->
+      <section>
+        <h2>The birth of music art</h2>
+        <p>
+          Music, as an art form, explores a vast range of genres, from classical
+          and jazz to electronic and folk. It serves not only as entertainment
+          but also as a medium for personal and collective expression. Musicians
+          craft compositions that reflect society, emotions, and imagination,
+          making music an essential, timeless cultural influence. Through
+          rhythm, melody, and harmony, music connects people, evokes feelings,
+          and inspires creativity. Its ability to transcend language barriers
+          and cultural differences has made it a powerful, unifying force
+          throughout history, continuing to evolve while remaining rooted in its
+          capacity to move and inspire.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
+      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+    </footer>
+  </body>
+</html>
