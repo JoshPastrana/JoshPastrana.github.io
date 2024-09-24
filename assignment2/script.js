@@ -29,26 +29,19 @@ function updateProgressBar() {
 fullscreenBtn.addEventListener("click", toggleFullscreen);
 
 document.addEventListener("fullscreenchange", handleFullscreenChange);
-document.addEventListener("webkitfullscreenchange", handleFullscreenChange); // Safari
-document.addEventListener("mozfullscreenchange", handleFullscreenChange); // Firefox
-document.addEventListener("MSFullscreenChange", handleFullscreenChange); // Edge-ARE THESE NECCESSARY?
 
+// Enter full screen
 function toggleFullscreen() {
   if (!document.fullscreenElement) {
     if (video.requestFullscreen) {
       video.requestFullscreen();
     }
-    fullscreenImg.src =
-      "https://img.icons8.com/ios-glyphs/30/exit-full-screen.png";
-  } else {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    }
-    fullscreenImg.src =
-      "https://img.icons8.com/ios-glyphs/30/full-screen--v1.png";
+    fullscreenImg.src = "https://img.icons8.com/ios-glyphs/30/full-screen.png";
   }
   // Do i need an exit with image
 }
+
+// keeping my icon after going back
 
 // Mute/Unmute functionality
 function toggleMute() {
@@ -58,16 +51,5 @@ function toggleMute() {
   } else {
     video.muted = true;
     muteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"; // Mute icon
-  }
-}
-
-// Handle fullscreen changes
-function handleFullscreenChange() {
-  if (!document.fullscreenElement) {
-    fullscreenImg.src =
-      "https://img.icons8.com/ios-glyphs/30/full-screen--v1.png";
-  } else {
-    fullscreenImg.src =
-      "https://img.icons8.com/ios-glyphs/30/exit-full-screen.png";
   }
 }
