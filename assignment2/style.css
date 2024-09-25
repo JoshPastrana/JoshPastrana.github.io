@@ -178,12 +178,12 @@ footer {
   color: var(--main-text-color);
   padding: 10px 0;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 .warning-symbols {
   font-size: 32px; /* Adjust size as needed */
   white-space: nowrap; /* Ensure symbols don't wrap to the next line */
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   width: 100%;
   display: inline-block;
