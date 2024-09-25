@@ -6,52 +6,87 @@
   --main-btn-bg-color: #938989;
 }
 
-body,
-h1,
-p {
-  text-align: center;
+h1 {
+  font-family: fantasy;
+  font-size: 80px; /* Fun and big font size */
+  color: #fff; /* Keep text color white */
+  text-align: center; /* Center the h1 */
+  letter-spacing: 4px; /* Add some spacing between letters for fun effect */
 }
+
+h2 {
+  font-family: fantasy;
+  font-size: 40px; /* Smaller than h1 but still big */
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+nav ul {
+  font-family: Arial, Helvetica, sans-serif; /* Change font */
+}
+
+.content-section {
+  margin-top: 20px; /* Space above the section */
+}
+
+.content-wrapper {
+  display: flex; /* Align image and text side by side */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between image and text */
+}
+
+.section-image {
+  width: 150px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px; /* Normal-sized text for readability */
+  color: #fff;
+  line-height: 1.5; /* Improved readability */
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove default margin */
+}
+
 ul {
   margin: 0;
   padding: 0;
 }
-h2 {
-  text-align: center; /* Centers the text */
-  font-size: larger; /* Adjust the size of the font */
-}
+
 section h2 {
-  margin-top: 20px; /* Adds space above the h2 */
+  margin-top: 20px;
 }
+
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
-  line-height: 1.9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Add additional styles as needed */
-
-/* Create a container for the main content */
 .container {
   max-width: 1000px;
   width: 100%;
   padding: 10px;
 }
 
-/* Header styling */
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   padding: 10px 0;
   text-align: center;
   width: 100%;
+  background-image: linear-gradient(45deg, #000 25%, transparent 25%),
+    linear-gradient(-45deg, #000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000 75%),
+    linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-size: 2px 2px; /* size of the squares */
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0;
 }
 
-/* Navigation styling */
 nav {
   margin-top: 20px;
   text-align: center;
@@ -72,7 +107,6 @@ nav a {
   color: var(--text-color);
 }
 
-/* Media player styling */
 .media-player {
   width: 100%;
   margin: 0 auto;
@@ -118,11 +152,16 @@ nav a {
   transition: width 0.3s ease;
 }
 
-/* Footer styling */
 footer {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   text-align: center;
   padding: 10px 0;
   width: 100%;
+  background-image: linear-gradient(45deg, #000 25%, transparent 25%),
+    linear-gradient(-45deg, #000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000 75%),
+    linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-size: 2px 2px; /* size of the squares */
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0;
 }
