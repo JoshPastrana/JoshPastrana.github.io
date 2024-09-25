@@ -76,7 +76,7 @@ function replayVideo() {
 // Speed Up functionality
 function toggleSpeedUp() {
   if (video.playbackRate === 1) {
-    video.playbackRate = 4.5; // Set to faster speed
+    video.playbackRate = 3.5; // Set to faster speed
     speedUpImg.src = "https://img.icons8.com/ios/50/fast-forward.png"; // Update icon for increased speed
   } else {
     video.playbackRate = 1; // Reset to normal speed

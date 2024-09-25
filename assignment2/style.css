@@ -1,9 +1,15 @@
 :root {
   --primary-bg-color: #9c78df;
   --text-color: #ffffff;
-  --main-bg-color: #a65ecf;
+  --main-bg-color: #ff0000;
   --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --main-btn-bg-color: #ff0000;
+}
+
+.media-player video {
+  max-width: 100%;
+  border: 5px solid #cf3bb6; /* Bright pink border */
+  border-radius: 8px; /* Optional: Rounded corners */
 }
 
 h1 {
@@ -15,14 +21,19 @@ h1 {
 }
 
 h2 {
-  font-family: fantasy;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 40px; /* Smaller than h1 but still big */
   text-align: center;
   color: #fff;
   margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; /* Add padding inside the box */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  background-color: #2b2322; /* Light pink background for better readability */
+  border-radius: 8px; /* Rounded corners */
 }
 nav ul {
-  font-family: Arial, Helvetica, sans-serif; /* Change font */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* Change font */
 }
 
 .content-section {
@@ -38,6 +49,9 @@ nav ul {
 .section-image {
   width: 150px; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  border-radius: 8px; /* Optional: Rounded corners */
+  padding: px; /* Optional: Space between image and border */
 }
 
 p {
@@ -47,6 +61,10 @@ p {
   line-height: 1.5; /* Improved readability */
   text-align: left; /* Align text to the left */
   margin: 0; /* Remove default margin */
+  padding: 10px; /* Add padding inside the box */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  background-color: #2b2322; /* Light pink background for better readability */
+  border-radius: 8px; /* Rounded corners */
 }
 
 ul {
@@ -65,6 +83,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  /* Checkered pattern */
+  background-image: linear-gradient(45deg, #000 25%, transparent 25%),
+    linear-gradient(-45deg, #000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000 75%),
+    linear-gradient(-45deg, transparent 75%, #000 75%);
+
+  background-size: 40px 40px; /* Increased size of squares */
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0; /* Adjust alignment */
 }
 
 .container {
@@ -79,12 +106,6 @@ header {
   padding: 10px 0;
   text-align: center;
   width: 100%;
-  background-image: linear-gradient(45deg, #000 25%, transparent 25%),
-    linear-gradient(-45deg, #000 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #000 75%),
-    linear-gradient(-45deg, transparent 75%, #000 75%);
-  background-size: 2px 2px; /* size of the squares */
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0;
 }
 
 nav {
@@ -155,13 +176,16 @@ nav a {
 footer {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  text-align: center;
   padding: 10px 0;
   width: 100%;
-  background-image: linear-gradient(45deg, #000 25%, transparent 25%),
-    linear-gradient(-45deg, #000 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #000 75%),
-    linear-gradient(-45deg, transparent 75%, #000 75%);
-  background-size: 2px 2px; /* size of the squares */
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0;
+  overflow: hidden;
+}
+.warning-symbols {
+  font-size: 32px; /* Adjust size as needed */
+  white-space: nowrap; /* Ensure symbols don't wrap to the next line */
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  animation: scroll-text 10s linear infinite; /* Optional scrolling effect */
 }
