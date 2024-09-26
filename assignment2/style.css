@@ -6,6 +6,20 @@
   --main-btn-bg-color: #ff0000;
 }
 
+#like-btn {
+  background-color: var(
+    --main-btn-bg-color
+  ); /* Use the red color from your root variables */
+  padding: 8px; /* Adjust padding as needed */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  margin-right: 15px; /* Adjust this value to increase or decrease the space */
+  margin-top: 10px; /* Adjust this value to move the button lower */
+}
+#like-btn img {
+  width: 24px; /* Adjust image size as needed */
+  height: 24px;
+}
+
 .media-player video {
   max-width: 100%;
   border: 5px solid #cf3bb6; /* Bright pink border */
@@ -62,6 +76,20 @@ p {
   border: 5px solid #ff69b4; /* Bright pink border */
   background-color: #2b2322; /* Light pink background for better readability */
   border-radius: 8px; /* Rounded corners */
+}
+
+.likes-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px; /* Normal-sized text for readability */
+  color: #fff;
+  line-height: 1.5; /* Improved readability */
+  text-align: left; /* Align text to the left */
+  padding: 6px; /* Add padding inside the box */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  background-color: #2b2322; /* Light pink background for better readability */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Ensure padding and border are applied correctly */
+  margin-bottom: 20px;
 }
 
 section h2 {
