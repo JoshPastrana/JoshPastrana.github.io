@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Linking the css -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,16 +10,18 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- Header Section, I decided on the name of the page with some warning symbols. I will create a music web page for an artist music video-->
     <header>
       <h1>⚠ ENTER THE ERROR ⚠</h1>
     </header>
 
     <!-- Main Content Section -->
     <main class="container">
-      <!-- Media Player Section -->
+      <!-- Media Player Section, where some of was already put. I decided to add on and some more elements and change some as well -->
       <div class="media-player">
         <div class="like-section">
+          <!-- The first one being the like button, I wanted to place it at the top to helping declutter the main button area, 
+           otherwise it would've been to many buttons at once. I used the like button similar to Youtubes liking system, giving viewers the chance to show their interest in the video by liking it -->
           <button id="like-btn">
             <img
               id="like-img"
@@ -28,6 +31,8 @@
               height="24"
             />
           </button>
+          <!-- Using icons from icon8 I linked them as the buttons to help give it a realistic feel like it was an actual website. 
+           Keeping it a nice width and height of 24 each for the shape  -->
           <span class="likes-text">Total likes: <span id="likes">0</span></span>
         </div>
         <video id="custom-video-player" controls>
@@ -37,7 +42,7 @@
           />
         </video>
         <div class="custom-controls">
-          <!-- Play/Pause Button -->
+          <!-- Play/Pause Button, the main part of this for the actual video to play and pause -->
           <button id="play-pause-btn" onclick="togglePlayPause()">
             <img
               id="play-pause-img"
@@ -48,7 +53,8 @@
             />
           </button>
 
-          <!-- Speed Up Button -->
+          <!-- A Speed Up Button is always in this. I felt like as the main element in this page is the music art video and its cool viusla experience, 
+           speeding it up would make it entertaining as well. Viewers get to see the patterns and colours in a faster pace-->
           <button id="speed-up-btn" onclick="toggleSpeedUp()">
             <img
               id="speed-up-img"
@@ -59,7 +65,7 @@
             />
           </button>
 
-          <!-- Fullscreen Button -->
+          <!-- Fullscreen Button is another important element I wanted to add to view the full experience of the music art -->
           <button id="fullscreen-btn">
             <img
               id="fullscreen-img"
@@ -70,7 +76,7 @@
             />
           </button>
 
-          <!-- Mute/Unmute Button -->
+          <!-- Mute/Unmute Button, if viewers are only inrerested in the visuals they can mute the audio so they can focus just on that-->
           <button id="mute-btn" onclick="toggleMute()">
             <img
               id="mute-img"
@@ -81,7 +87,7 @@
             />
           </button>
 
-          <!-- Replay Button -->
+          <!-- Replay Button was put so that they can watch it again as many times as they want-->
           <button id="replay-btn" onclick="replayVideo()">
             <img
               id="replay-img"
@@ -92,18 +98,21 @@
             />
           </button>
 
-          <!-- Progress Bar -->
+          <!-- Progress Bar was kept to help show the video length and the current time its in-->
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
         </div>
       </div>
 
-      <!-- Additional Content Section -->
+      <!-- Additional Content Section was the part where I added more things besides the video. I wanted to create context for the actual video by creating a persona of a DJ aritsts 
+       descripition in the bottom, it showcases a quick and summary of who he is and what genre and music video as well. I used Chatgpt to help word and phrase how the description goes. -->
       <section class="content-section">
         <h2>Experimental Glitch Art: The Album</h2>
+        <!-- The album name I decided the music video was part of -->
         <div class="content-wrapper">
           <img src="dj.jpg" class="section-image" alt="DJ Santos" />
+          <!-- Just used a selfie image of me to become the dj in this context, showing thats who he looks like, I dragged the jpg into this assingment file -->
           <p>
             DJ Santos, known for his innovative soundscapes, released a
             groundbreaking music art video for his experimental album: The new
@@ -125,16 +134,16 @@
       </section>
     </main>
 
-    <!-- Navigation Section -->
+    <!-- Navigation Section is where I will put the button to the references page-->
     <nav>
       <a href="2nd.html" class="nav-button">References</a>
     </nav>
 
-    <!-- Footer Section -->
+    <!-- Footer Section, continuing on with the experimental/glitch them, I put more warning symbols at the bottom with the footer helping create the theme and setting more -->
     <footer>
       <div class="warning-symbols">
         ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠
-        ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠
+        ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠
       </div>
     </footer>
   </body>
