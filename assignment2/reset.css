@@ -1,57 +1,62 @@
 /* 
-*   Kevin Powell
-*   https://youtu.be/cCAtD_BAHNw 
-*/
+ * Kevin Powell Tutorial 
+ * Source: https://youtu.be/cCAtD_BAHNw 
+ */
 
+/* Universal Box Sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Reset Margins, Paddings, and Font Inheritance */
 * {
   margin: 0;
   padding: 0;
-  font: inherit; /* Get rid of all font sizes and heights */
+  font: inherit; /* Inherit font properties */
 }
 
+/* Global Styles */
 html {
-  color-scheme: dark light; /* Default dark */
-  hanging-punctuation: first last; /* Not supported in Chrome */
+  color-scheme: dark light; /* Supports both dark and light themes */
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100vh; /* Ensure body takes up full viewport height */
+  font-family: sans-serif; /* Add default font-family for consistency */
 }
 
-/* Media responsive */
+/* Responsive Media Elements */
 img,
 picture,
 svg,
 video {
   display: block;
   max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
 }
 
+/* Headings */
 h1 {
-  font-size: 36px;
+  margin-bottom: 1rem; /* Space below heading */
 }
+
 h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
+h3 {
+  text-wrap: balance; /* Balanced text wrapping for headings */
 }
 
+/* Paragraph Styling */
 p {
-  /* max-width: 75ch; */
-  text-wrap: pretty; /* Prevents orphans on lines */
+  text-wrap: pretty; /* Prevent single-word lines */
+  line-height: 1.6; /* Improve text readability */
 }
 
+/* Smooth Scrolling for Targeted Anchors */
 @media (prefers-reduced-motion: no-preference) {
   :has(:target) {
     scroll-behavior: smooth;
-    scroll-padding-top: 3rem;
+    scroll-padding-top: 3rem; /* Space above target element */
   }
 }
