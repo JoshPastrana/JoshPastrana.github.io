@@ -6,96 +6,6 @@
   --main-btn-bg-color: #ff0000;
 }
 
-#like-btn {
-  background-color: var(
-    --main-btn-bg-color
-  ); /* Use the red color from your root variables */
-  padding: 8px; /* Adjust padding as needed */
-  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-  margin-right: 15px; /* Adjust this value to increase or decrease the space */
-  margin-top: 10px; /* Adjust this value to move the button lower */
-}
-#like-btn img {
-  width: 24px; /* Adjust image size as needed */
-  height: 24px;
-}
-
-.media-player video {
-  max-width: 100%;
-  border: 5px solid #ff69b4; /* Bright pink border */
-  border-radius: 8px; /* Optional: Rounded corners */
-}
-
-h1 {
-  font-family: fantasy;
-  font-size: 80px; /* Fun and big font size */
-  color: #fff; /* Keep text color white */
-  text-align: center; /* Center the h1 */
-  letter-spacing: 4px; /* Add some spacing between letters for fun effect */
-}
-
-h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 40px; /* Smaller than h1 but still big */
-  text-align: center;
-  color: #fff;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px; /* Add padding inside the box */
-  border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322; /* Light pink background for better readability */
-  border-radius: 8px; /* Rounded corners */
-}
-
-.content-section {
-  margin-top: 20px; /* Space above the section */
-}
-
-.content-wrapper {
-  display: flex; /* Align image and text side by side */
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Space between image and text */
-}
-
-.section-image {
-  width: 150px; /* Adjust size as needed */
-  height: auto; /* Maintain aspect ratio */
-  border: 5px solid #ff69b4; /* Bright pink border */
-  border-radius: 8px; /* Optional: Rounded corners */
-  padding: px; /* Optional: Space between image and border */
-}
-
-p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px; /* Normal-sized text for readability */
-  color: #fff;
-  line-height: 1.5; /* Improved readability */
-  text-align: left; /* Align text to the left */
-  margin: 0; /* Remove default margin */
-  padding: 10px; /* Add padding inside the box */
-  border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322; /* Light pink background for better readability */
-  border-radius: 8px; /* Rounded corners */
-}
-
-.likes-text {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px; /* Normal-sized text for readability */
-  color: #fff;
-  line-height: 1.5; /* Improved readability */
-  text-align: left; /* Align text to the left */
-  padding: 6px; /* Add padding inside the box */
-  border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322; /* Light pink background for better readability */
-  border-radius: 8px; /* Rounded corners */
-  display: inline-block; /* Ensure padding and border are applied correctly */
-  margin-bottom: 20px;
-}
-
-section h2 {
-  margin-top: 20px;
-}
-
 body {
   background-color: var(--primary-bg-color);
   color: var(--text-color);
@@ -105,19 +15,13 @@ body {
   justify-content: space-between;
 
   /* Checkered pattern */
-  background-image: linear-gradient(45deg, #000 25%, transparent 25%),
+  background-image: linear-gradient(45deg, #000000 25%, transparent 25%),
     linear-gradient(-45deg, #b1699e 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #000 75%),
     linear-gradient(-45deg, transparent 75%, #000 75%);
 
-  background-size: 40px 40px; /* Increased size of squares */
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0; /* Adjust alignment */
-}
-
-.container {
-  max-width: 1000px;
-  width: 100%;
-  padding: 10px;
+  background-size: 40px 40px; /* Size of squares */
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0; /* Alignment */
 }
 
 header {
@@ -128,20 +32,29 @@ header {
   width: 100%;
 }
 
-/* for the reference button, try make actual button with sound when clicked */
+header h1 {
+  color: #fff;
+  font-family: fantasy;
+  font-size: 80px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+}
+
 nav {
   margin-top: 20px;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px; /* Smaller than h1 but still big */
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px; /* Add padding inside the box */
-  border: 3px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322; /* Light pink background for better readability */
-  border-radius: 4px; /* Rounded corners */
+  padding: 10px;
+  border: 3px solid #ff69b4;
+  background-color: #2b2322;
+  border-radius: 4px;
 }
 
 nav a {
@@ -156,6 +69,8 @@ nav a {
 
 .media-player video {
   max-width: 100%;
+  border: 5px solid #ff69b4; /* Bright pink border */
+  border-radius: 8px; /* Rounded corners */
 }
 
 .custom-controls {
@@ -197,9 +112,11 @@ nav a {
 footer {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  padding: 40px 0;
+  padding: 40px;
   width: 100%;
+  margin-top: 20px;
 }
+
 .warning-symbols {
   font-size: 32px; /* Adjust size as needed */
   white-space: nowrap; /* Ensure symbols don't wrap to the next line */
@@ -209,17 +126,85 @@ footer {
   display: inline-block;
   animation: scroll-text 10s linear infinite; /* Optional scrolling effect */
 }
-/* Styled list using the provided style */
+
+h1 {
+  font-family: fantasy;
+  font-size: 80px; /* Fun and big font size */
+  color: #fff; /* Keep text color white */
+  text-align: center; /* Center the h1 */
+  letter-spacing: 4px; /* Add some spacing between letters for fun effect */
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px; /* Smaller than h1 but still big */
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; /* Add padding inside the box */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  background-color: #2b2322; /* Light pink background for better readability */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.content-section {
+  margin-top: 20px; /* Space above the section */
+}
+
+.content-wrapper {
+  display: flex; /* Align image and text side by side */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between image and text */
+}
+
+.section-image {
+  width: 150px; /* Adjust size as needed */
+  height: max-content; /* Maintain aspect ratio */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px; /* Normal-sized text for readability */
+  color: #fff;
+  line-height: 1.5; /* Improved readability */
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add padding inside the box */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  background-color: #2b2322; /* Light pink background for better readability */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.likes-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px; /* Normal-sized text for readability */
+  color: #fff;
+  line-height: 1.5; /* Improved readability */
+  text-align: left; /* Align text to the left */
+  padding: 6px; /* Add padding inside the box */
+  border: 5px solid #ff69b4; /* Bright pink border */
+  background-color: #2b2322; /* Light pink background for better readability */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Ensure padding and border are applied correctly */
+  margin-bottom: 20px;
+}
+
 .styled-list {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 18px;
   color: #fff;
   line-height: 1.5;
   text-align: left;
-  padding: 6px;
+  padding: 7px;
+  border: 5px solid #ff69b4; /* Bright pink border */
+  background-color: #1fbd37; /* Adjusted background color */
   border-radius: 8px;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-top: 90px;
+  margin-bottom: 180px;
 }
 
 .styled-list ul {
@@ -228,63 +213,25 @@ footer {
   margin: 0;
 }
 
+.styled-list img {
+  margin-right: 10px; /* Add space between image and text */
+}
+
 .styled-list li {
   margin: 10px 0; /* Adds space between list items */
-}
-
-.styled-list a {
-  color: #ff69b4; /* Bright pink link color */
-  text-decoration: none;
-}
-
-.styled-list a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-nav {
-  margin-top: 20px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 3px solid #ff69b4;
-  background-color: #2b2322;
-  border-radius: 4px;
-}
-
-header h1 {
-  color: #fff;
-  font-family: fantasy;
-  font-size: 80px;
-  text-align: center;
-}
-/* all for ref page */
-/* Styled list using the provided style */
-.styled-list {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px;
-  color: #fff;
-  line-height: 1.5;
-  text-align: left;
-  padding: 6px;
-  border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #1fbd37;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 90px;
-  margin-bottom: 180px;
-}
-
-.styled-list li {
-  margin-bottom: 10px;
   display: flex;
   align-items: center; /* Align icon and text vertically */
 }
 
-.styled-list a img {
-  margin-right: 10px; /* Space between icon and text */
-  width: 30px; /* Icon size */
-  height: 30px;
+#like-btn {
+  background-color: var(--main-btn-bg-color);
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+#like-btn img {
+  width: 24px;
+  height: 24px;
 }
