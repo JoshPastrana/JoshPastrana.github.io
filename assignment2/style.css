@@ -22,7 +22,7 @@
 
 .media-player video {
   max-width: 100%;
-  border: 5px solid #cf3bb6; /* Bright pink border */
+  border: 5px solid #ff69b4; /* Bright pink border */
   border-radius: 8px; /* Optional: Rounded corners */
 }
 
@@ -106,7 +106,7 @@ body {
 
   /* Checkered pattern */
   background-image: linear-gradient(45deg, #000 25%, transparent 25%),
-    linear-gradient(-45deg, #000 25%, transparent 25%),
+    linear-gradient(-45deg, #b1699e 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #000 75%),
     linear-gradient(-45deg, transparent 75%, #000 75%);
 
@@ -217,8 +217,6 @@ footer {
   line-height: 1.5;
   text-align: left;
   padding: 6px;
-  border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322;
   border-radius: 8px;
   display: inline-block;
   margin-bottom: 20px;
@@ -272,14 +270,21 @@ header h1 {
   text-align: left;
   padding: 6px;
   border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322;
+  background-color: #1fbd37;
   border-radius: 8px;
   display: inline-block;
   margin-top: 90px;
   margin-bottom: 180px;
 }
 
-.styled-list a {
-  color: #ffffff; /* Bright pink link color */
-  text-decoration: none;
+.styled-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+}
+
+.styled-list a img {
+  margin-right: 10px; /* Space between icon and text */
+  width: 30px; /* Icon size */
+  height: 30px;
 }
