@@ -9,8 +9,8 @@ const muteImg = document.querySelector("#mute-img");
 const replayBtn = document.querySelector("#replay-btn");
 const speedUpBtn = document.querySelector("#speed-up-btn");
 const speedUpImg = document.querySelector("#speed-up-img");
+// All od the const I put for the buttons to work ranging from the video player itself to the speed up buttons
 
-// Like button logic
 let likeCount = 0;
 const likeBtn = document.querySelector("#like-btn");
 const likesDisplay = document.querySelector("#likes");
