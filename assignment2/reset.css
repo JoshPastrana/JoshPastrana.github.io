@@ -10,53 +10,29 @@
   box-sizing: border-box;
 }
 
-/* Reset Margins, Paddings, and Font Inheritance */
+/* Margins, Paddings, and Font Inheritance */
 * {
   margin: 0;
   padding: 0;
-  font: inherit; /* Inherit font properties */
-}
-
-/* Global Styles */
-html {
-  color-scheme: dark light; /* Supports both dark and light themes */
+  font: inherit; /* Inheriting font properties */
 }
 
 body {
-  min-height: 100vh; /* Ensure body takes up full viewport height */
-  font-family: sans-serif; /* Add default font-family for consistency */
+  min-height: 100vh; /* Ensuring body takes up full viewport height */
+  font-family: sans-serif; /* Added default font-family for consistency, although most fonts already
+  styled just leaving in case any issues*/
 }
 
 /* Responsive Media Elements */
-img,
-picture,
-svg,
+
 video {
   display: block;
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto; /* Similar to body im just keeping these for backup in case*/
 }
 
 /* Headings */
 h1 {
-  margin-bottom: 1rem; /* Space below heading */
-}
-
-h2,
-h3 {
-  text-wrap: balance; /* Balanced text wrapping for headings */
-}
-
-/* Paragraph Styling */
-p {
-  text-wrap: pretty; /* Prevent single-word lines */
-  line-height: 1.6; /* Improve text readability */
-}
-
-/* Smooth Scrolling for Targeted Anchors */
-@media (prefers-reduced-motion: no-preference) {
-  :has(:target) {
-    scroll-behavior: smooth;
-    scroll-padding-top: 3rem; /* Space above target element */
-  }
+  font-size: 36px;
+  margin-bottom: 1rem;
 }

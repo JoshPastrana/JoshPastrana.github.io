@@ -50,6 +50,7 @@ header h1 {
 }
 
 nav {
+  /* Styling for the navigation menu, using simliar colours and fonts once again to match the overall aesthetic */
   margin-top: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -86,6 +87,8 @@ nav a {
   width: 100%;
 }
 
+/* Keeping all the buttons clean and nice in the same space. Kept it a good shape that was still easily viewable and clickable */
+
 .custom-controls button {
   background-color: var(--main-btn-bg-color);
   color: var(--main-text-color);
@@ -104,6 +107,7 @@ nav a {
   margin-top: 10px;
   overflow: hidden;
 }
+/* Progress bar style */
 
 .progress-bar span {
   display: block;
@@ -120,22 +124,22 @@ footer {
   width: 100%;
   margin-top: 20px;
 }
-
+/* Similar to header I kept it red as well with the warning symbols in it at the center */
 .warning-symbols {
-  font-size: 32px; /* Adjust size as needed */
-  white-space: nowrap; /* Ensure symbols don't wrap to the next line */
-  overflow: hidden; /* Hide overflow text if necessary */
+  font-size: 32px;
+  white-space: nowrap;
+  overflow: hidden;
   text-align: center;
   width: 100%;
-  display: block; /* Ensure it takes up the full width */
+  display: block;
 }
 
 h1 {
   font-family: fantasy;
   font-size: 80px; /* Fun and big font size */
   color: #fff; /* Keep text color white */
-  text-align: center; /* Center the h1 */
-  letter-spacing: 4px; /* Add some spacing between letters for fun effect */
+  text-align: center;
+  letter-spacing: 4px;
 }
 
 h2 {
@@ -146,39 +150,42 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px; /* Add padding inside the box */
-  border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322; /* Light pink background for better readability */
-  border-radius: 8px; /* Rounded corners */
+  border: 5px solid #ff69b4;
+  background-color: #2b2322;
+  border-radius: 8px; /* Rounded corners on h2*/
 }
 
 .content-section {
   margin-top: 20px; /* Space above the section */
 }
 
+/* Putting the text and image side by side with a space as well */
 .content-wrapper {
-  display: flex; /* Align image and text side by side */
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Space between image and text */
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
+/* Adjusted image width and border, didnt want to make it to big as it might shadow over the text */
 .section-image {
-  width: 150px; /* Adjust size as needed */
-  height: max-content; /* Maintain aspect ratio */
-  border: 5px solid #ff69b4; /* Bright pink border */
-  border-radius: 4px; /* Rounded corners */
+  width: 150px;
+  height: max-content;
+  border: 5px solid #ff69b4;
+  border-radius: 4px;
 }
 
+/* The paragraph styling, keeping it in a smiliar theme to the image and heading colours, with rounded corners */
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px; /* Normal-sized text for readability */
+  font-size: 18px;
   color: #fff;
-  line-height: 1.5; /* Improved readability */
-  text-align: left; /* Align text to the left */
-  margin: 0; /* Remove default margin */
-  padding: 10px; /* Add padding inside the box */
-  border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #2b2322; /* Light pink background for better readability */
-  border-radius: 8px; /* Rounded corners */
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  border: 5px solid #ff69b4;
+  background-color: #2b2322;
+  border-radius: 8px;
 }
 
 .likes-text {
@@ -203,7 +210,7 @@ p {
   text-align: left;
   padding: 7px;
   border: 5px solid #ff69b4; /* Bright pink border */
-  background-color: #1fbd37; /* Adjusted background color */
+  background-color: #1fbd37; /* Adjusted background color, making it different from the others and standing out  */
   border-radius: 8px;
   display: inline-block;
   margin-top: 90px;
@@ -211,19 +218,18 @@ p {
 }
 
 .styled-list ul {
-  list-style-type: none; /* Removes default bullet points */
   padding: 0;
   margin: 0;
 }
 
 .styled-list img {
-  margin-right: 10px; /* Add space between image and text */
+  margin-right: 10px; /* Added space between image and text */
 }
 
 .styled-list li {
-  margin: 10px 0; /* Adds space between list items */
+  margin: 10px 0; /* Added space between list items */
   display: flex;
-  align-items: center; /* Align icon and text vertically */
+  align-items: center; /* Aligning icon and text vertically */
 }
 
 #like-btn {
@@ -238,3 +244,4 @@ p {
   width: 24px;
   height: 24px;
 }
+/* The style for the like button at the top of the video */

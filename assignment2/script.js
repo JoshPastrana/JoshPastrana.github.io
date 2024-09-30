@@ -95,3 +95,4 @@ function toggleSpeedUp() {
     speedUpImg.src = "https://img.icons8.com/ios-glyphs/30/fast-forward.png";
   }
 }
+// Had some issues early on configuring the speed up function, so I used Chatgpt to help fix and arrange the code well to work turning it between 3.5 and 1 when clicked
