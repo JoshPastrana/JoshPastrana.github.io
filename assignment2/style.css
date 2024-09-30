@@ -5,8 +5,10 @@
   --main-text-color: #fff;
   --main-btn-bg-color: #ff0000;
 }
-
+/* The global css variables for consistent styling for sections such as text, header/footer */
+/* I decided to opt for red as button and footer colour to help create a unique color pallette, it stand out bright and helps compliment the elements in them  */
 body {
+  /* Applying the style to main body of the background, All the elements are centered with some space between them */
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   display: flex;
@@ -14,14 +16,15 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  /* Checkered pattern */
+  /* Checkered pattern was the main background I wanted, A couple of google searches helped me set up how to create it
+  I wanted it be very symmetrical with different colours yet still fitted in the theme of the video */
   background-image: linear-gradient(45deg, #000000 25%, transparent 25%),
     linear-gradient(-45deg, #b1699e 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #000 75%),
     linear-gradient(-45deg, transparent 75%, #000 75%);
-
-  background-size: 40px 40px; /* Size of squares */
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0; /* Alignment */
+  /* Purple, pink and black just like the video, all in a checkered background  */
+  background-size: 40px 40px; /* Size of squares, */
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0; /* The alignment of the background to keep them as squares*/
 }
 
 header {
@@ -31,6 +34,7 @@ header {
   text-align: center;
   width: 100%;
 }
+/* Header styling, linking it back to main bg color */
 
 header h1 {
   color: #fff;
@@ -38,7 +42,7 @@ header h1 {
   font-size: 80px;
   text-align: center;
 }
-
+/* Setting up the header with its font and text, went for a big and bold font to show alertness to the viewers on moment of arrival */
 .container {
   max-width: 1000px;
   width: 100%;
@@ -120,11 +124,10 @@ footer {
 .warning-symbols {
   font-size: 32px; /* Adjust size as needed */
   white-space: nowrap; /* Ensure symbols don't wrap to the next line */
-  overflow: visible;
+  overflow: hidden; /* Hide overflow text if necessary */
   text-align: center;
   width: 100%;
-  display: inline-block;
-  animation: scroll-text 10s linear infinite; /* Optional scrolling effect */
+  display: block; /* Ensure it takes up the full width */
 }
 
 h1 {
