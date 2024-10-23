@@ -3,11 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Badminton Event</title>
+    <title>DOM Handling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Welcome to the Badminton Event!</h1>
-    <p>Join us for casual games in Bundoora!</p>
+    <div class="guitar-container">
+      <img src="guitar.jpeg" alt="Guitar" id="guitar-image" tabindex="0" />
+      <div id="guitar-description" class="guitar-description">
+        <p>
+          This guitar has a bright sound and is perfect for rock music. It is
+          lightweight and easy to play, making it suitable for both beginners
+          and experienced musicians.
+        </p>
+      </div>
+    </div>
+    <div class="drums-container">
+      <img
+        src="drums.jpg"
+        alt="Drums"
+        class="instrument-image"
+        data-instrument="drums"
+        tabindex="0"
+      />
+      <div class="instrument-description" id="drums-description">
+        <p>
+          These drums provide a rhythmic backbone with dynamic beats. Ideal for
+          energetic performances across genres like rock, jazz, and funk.
+        </p>
+      </div>
+    </div>
+
+    <div class="piano-container">
+      <img
+        src="piano.webp"
+        alt="Piano"
+        class="instrument-image"
+        data-instrument="piano"
+        tabindex="0"
+      />
+      <div class="instrument-description" id="piano-description">
+        <p>
+          The piano offers a rich and versatile sound, perfect for classical,
+          jazz, and pop. It's a favorite for both solo performances and
+          ensembles.
+        </p>
+      </div>
+    </div>
+
+    <div class="bass-container">
+      <img
+        src="bass.jpg"
+        alt="Bass"
+        class="instrument-image"
+        data-instrument="bass"
+        tabindex="0"
+      />
+      <div class="instrument-description" id="bass-description">
+        <p>
+          The bass provides deep, low-end support, crucial for rhythm and groove
+          in genres like funk, jazz, and rock.
+        </p>
+      </div>
+    </div>
+
+    <audio id="guitar-sound" src="guitar.wav"></audio>
+    <audio id="drums-sound" src="guitar.wav"></audio>
+    <audio id="piano-sound" src="guitar.wav"></audio>
+    <audio id="bass-sound" src="guitar.wav"></audio>
   </body>
 </html>
