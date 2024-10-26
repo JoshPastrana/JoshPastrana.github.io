@@ -1,13 +1,13 @@
 /* Body Styling */
 body {
   background-image: url("red stage.jpg");
-  background-size: 100% var(--bg-height, 100vh); /* Adjust height dynamically */
+  background-size: 100% var(--bg-height, 120vh); /* Adjust height dynamically */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  height: 80%;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -15,8 +15,28 @@ body {
   font-family: "Space Grotesk", sans-serif;
 }
 
+/* Title Styling */
+.title-container {
+  position: absolute;
+  top: 5%; /* Adjust the vertical position */
+  width: 100%; /* Center title horizontally */
+  text-align: center;
+}
+
+.page-title {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 8rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 /* Instrument Container Styling */
 .instrument-container {
+  position: relative; /* Allow precise positioning */
+  width: 80%; /* Make sure the content stays in the center */
+  height: 55%; /* Center the instruments vertically */
   display: grid;
   grid-template-areas:
     "piano flute sax"
@@ -24,9 +44,8 @@ body {
     "violin . .";
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Space between instruments */
-  width: 90%; /* Centered content */
-  height: 80%; /* Keep within the viewport */
+  gap: 30px; /* Space between instruments */
+  padding: 20px;
 }
 
 /* Individual Instrument Item Styling */
@@ -35,51 +54,52 @@ body {
   text-align: center;
 }
 
-/* Size the instruments realistically */
-.instrument-image[data-instrument="drums"] {
-  width: 400px; /* Largest */
-  grid-area: drums;
-}
-
-.instrument-image[data-instrument="piano"] {
-  width: 300px;
-  grid-area: piano;
-}
-
-.instrument-image[data-instrument="guitar"] {
-  width: 200px;
-  grid-area: guitar;
-}
-
-.instrument-image[data-instrument="bass"] {
-  width: 200px;
-  grid-area: bass;
-}
-
-.instrument-image[data-instrument="sax"] {
-  width: 170px;
-  grid-area: sax;
-}
-
-.instrument-image[data-instrument="violin"] {
-  width: 150px;
-  grid-area: violin;
-}
-
-.instrument-image[data-instrument="flute"] {
-  width: 80px; /* Smallest */
-  grid-area: flute;
-}
-
-/* Image Styling with subtle hover effect */
+/* Control instrument size individually */
 .instrument-image {
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  max-width: 100%; /* Prevent images from overflowing */
 }
 
 .instrument-image:hover {
   transform: scale(1.05); /* Slight zoom */
+}
+
+/* Custom size for each instrument */
+.instrument-image[data-instrument="drums"] {
+  width: 320px; /* Large */
+  grid-area: drums;
+}
+
+.instrument-image[data-instrument="piano"] {
+  width: 380px;
+  grid-area: piano;
+}
+
+.instrument-image[data-instrument="guitar"] {
+  width: 250px;
+  grid-area: guitar;
+}
+
+.instrument-image[data-instrument="bass"] {
+  width: 180px;
+  grid-area: bass;
+}
+
+.instrument-image[data-instrument="sax"] {
+  width: 100px;
+  grid-area: sax;
+}
+
+.instrument-image[data-instrument="violin"] {
+  width: 100px;
+  grid-area: violin;
+}
+
+.instrument-image[data-instrument="flute"] {
+  width: 80px; /* Small */
+  grid-area: flute;
 }
 
 /* Instrument Description Styling */
