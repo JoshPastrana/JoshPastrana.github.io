@@ -43,8 +43,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
-  column-gap: 2px;
-  row-gap: 30px;
+  column-gap: 3px;
+  row-gap: 70px;
   padding: 0 40px;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .instrument-image[data-instrument="bass"] {
-  width: 180px;
+  width: 160px;
 }
 
 .instrument-image[data-instrument="sax"] {
@@ -90,7 +90,7 @@ body {
 }
 
 .instrument-image[data-instrument="flute"] {
-  width: 120px;
+  width: 140px;
 }
 
 .instrument-image[data-instrument="harmonica"] {
@@ -118,6 +118,26 @@ body {
 }
 
 .instrument-item:hover .instrument-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Instrument Name Styling */
+.instrument-name {
+  visibility: hidden;
+  position: absolute;
+  bottom: -30px; /* Adjust based on preference */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Keep the text color white */
+  max-width: 200px;
+  text-align: center;
+  font-size: 18px; /* Adjust this value for larger font size */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.instrument-item:hover .instrument-name {
   visibility: visible;
   opacity: 1;
 }
