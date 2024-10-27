@@ -1,0 +1,57 @@
+/* reset.css */
+
+/* Remove default margins, padding, and borders */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font and smooth rendering */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure images and videos scale properly */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reset input and button styles */
+input,
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset audio tag */
+audio {
+  display: block;
+}
+
+/* Set body to take full height */
+html,
+body {
+  height: 100%;
+}

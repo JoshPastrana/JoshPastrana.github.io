@@ -35,7 +35,7 @@ body {
 .instrument-container {
   position: relative;
   width: 70%;
-  height: 60%;
+  height: 45%;
   display: grid;
   grid-template-areas:
     "sax flute harmonica piano"
