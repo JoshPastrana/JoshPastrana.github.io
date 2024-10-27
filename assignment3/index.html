@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Sets the language of the page to English -->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Class</title>
+    <!-- Ensures the page is responsive on mobile devices. -->
+
+    <title>Joshuas Music Show</title>
+    <!-- Sets the page title, shown on the browser tab. I wanted something nice and firendly as the context of my website is an educative kids website for intrumental knowledge -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Linking to external font services. -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
       rel="stylesheet"
     />
+    <!-- Imports custom fonts for the website heading I found one called "Luckiest Guy" A very fun and bold font that can be used to associate with a younger audience.
+     I think it sets well with the theme im trying to make-->
+
     <link rel="stylesheet" href="reset.css" />
+    <!-- Resets default browser styles to ensure consistent styling if case any stylesheet issues arise -->
+
     <link rel="stylesheet" href="style.css" />
+    <!-- Links the custom stylesheet for the page layout and design. Very important as this website is based heavily on design -->
+
     <script src="script.js" defer></script>
+    <!-- Links the JavaScript file ensuring that the elements and interactions actually work well -->
   </head>
+
   <body>
     <div class="title-container">
       <h1 class="page-title">𝄞 Music Stage 𝄞</h1>
+      <!-- Put with all the other body elements to make it easier. This displays the main title of the page using decorative musical symbols. As its set in a msucial stage experience this name seemed suitable-->
     </div>
 
     <div class="instrument-container">
-      <!-- Guitar -->
+      <!-- Contains all the instrument elements arranged in a grid layout. -->
+
+      <!-- What I coded to make each specific instrument work, includint the image of the actual insturment so users have an idea of what it looks like
+       then followed with the classes to make it work -->
       <div class="instrument-item">
         <img
           src="guitar.png"
@@ -29,12 +50,16 @@
           data-instrument="guitar"
           tabindex="0"
         />
+        <!-- Followed with the description classes and elements, I wrote a brief summary of the instrument talking about how it works, what it does and what its good for
+         in a informal yet simple and playful tone for the kid audience -->
         <div class="instrument-description" id="guitar-description">
           <p>
-            A stringed instrument played by strumming or plucking its six
-            strings, with fingers pressing frets to change notes and chords.
+            The popular guitar produces sound by plucking or strumming strings.
+            Pressing frets changes pitch, making it great for chords and
+            melodies.
           </p>
         </div>
+        <!-- Lastly at the bottom of the image and description im adding the actual name of the instrument in all caps to capture their attention of what instrument they are seeing in hopes to remember -->
         <div class="instrument-name">GUITAR</div>
       </div>
 
@@ -49,9 +74,8 @@
         />
         <div class="instrument-description" id="bass-description">
           <p>
-            The bass guitar has thick strings, played by plucking, providing
-            deep notes. Players press the fretboard to adjust pitch and build
-            rhythm.
+            The bass guitar provides deep, rhythmic tones. It uses thick strings
+            that are plucked or slapped to create grooves.
           </p>
         </div>
         <div class="instrument-name">BASS</div>
@@ -68,8 +92,8 @@
         />
         <div class="instrument-description" id="violin-description">
           <p>
-            Has four strings played with a bow. Pressing the fingerboard changes
-            pitch, making it ideal for expressive, fast melodies.
+            A violin produces sound by drawing a bow across four strings.
+            Pressing the fingerboard changes pitch for expressive melodies.
           </p>
         </div>
         <div class="instrument-name">VIOLIN</div>
@@ -86,8 +110,8 @@
         />
         <div class="instrument-description" id="sax-description">
           <p>
-            A very popular wind instrument. Players blow through a reed
-            mouthpiece and press keys to produce smooth, jazzy tones.
+            A saxophone creates smooth sounds by blowing through a reed
+            mouthpiece and pressing keys for jazzy tones.
           </p>
         </div>
         <div class="instrument-name">SAXOPHONE</div>
@@ -104,8 +128,8 @@
         />
         <div class="instrument-description" id="flute-description">
           <p>
-            Produces its sound by blowing across its mouthpiece. Covering finger
-            holes changes pitch, creating light and airy tones.
+            These small but loud flutes produces airy tones by blowing across
+            its mouthpiece. Covering holes alters the pitch.
           </p>
         </div>
         <div class="instrument-name">FLUTE</div>
@@ -122,9 +146,8 @@
         />
         <div class="instrument-description" id="piano-description">
           <p>
-            This classic instrument creates sound by striking keys, which
-            trigger hammers that hit strings. It's great for solos,
-            accompaniment, and ensembles.
+            A classy instrument, pianos strikes strings with hammers when keys
+            are pressed, producing sound ideal for solos and ensembles.
           </p>
         </div>
         <div class="instrument-name">PIANO</div>
@@ -141,8 +164,8 @@
         />
         <div class="instrument-description" id="drums-description">
           <p>
-            Played by striking toms and cymbals with sticks or hands, creating
-            beats that drive rhythm across various musical genres.
+            Drums create rhythmic beats by striking cymbals and toms with sticks
+            or hands, driving musical rhythm and hard beats.
           </p>
         </div>
         <div class="instrument-name">DRUMS</div>
@@ -159,14 +182,15 @@
         />
         <div class="instrument-description" id="harmonica-description">
           <p>
-            This is played by blowing or drawing air through reeds, producing
-            soulful melodies perfect for blues and folk music.
+            A harmonica creates melodies by blowing and drawing air through
+            reeds, often used in blues and folk music.
           </p>
         </div>
         <div class="instrument-name">HARMONICA</div>
       </div>
     </div>
 
+    <!-- Audio elements for each instrument sound, identified by their corresponding IDs. I found sounds online of each specific instrument so users can hear what the intrument sounds like when played -->
     <audio id="guitar-sound" src="sound/guitar.mp3"></audio>
     <audio id="drums-sound" src="sound/drums.mp3"></audio>
     <audio id="piano-sound" src="sound/piano.mp3"></audio>
@@ -175,5 +199,7 @@
     <audio id="violin-sound" src="sound/violin.mp3"></audio>
     <audio id="flute-sound" src="sound/flute.mp3"></audio>
     <audio id="harmonica-sound" src="sound/harmonica.mp3"></audio>
+    <!-- These audio elements allow the user to play sounds for each instrument.Putting the sound elements all in the sound file to better arragne it and not get it mixed up witht the sound images 
+     as the intrument sound and images have same name -->
   </body>
 </html>

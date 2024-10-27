@@ -1,143 +1,155 @@
 /* Body Styling */
 body {
+  /* Sets a background image for the page and defines how it behaves. */
   background-image: url("red stage.jpg");
-  background-size: 100% var(--bg-height, 120vh);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Space Grotesk", sans-serif;
+  background-size: 100% var(--bg-height, 120vh); /* Ensures the background covers the full width and uses CSS variables for height flexibility. */
+  background-position: center; /* Centers the background image to maintain focus. */
+  background-repeat: no-repeat; /* Prevents the image from repeating horizontally or vertically. */
+  background-attachment: fixed; /* Keeps the background in place when scrolling. */
+  margin: 0; /* Removes default browser margin for consistent layout. */
+  padding: 0; /* Removes padding to avoid extra space around the content. */
+  height: 100vh; /* Ensures the body takes up the full height of the viewport. */
+  overflow: hidden; /* Prevents scrollbars from appearing. */
+  display: flex; /* Uses Flexbox to align child elements. */
+  justify-content: center; /* Centers content horizontally. */
+  align-items: center; /* Centers content vertically. */
+  font-family: "Space Grotesk", sans-serif; /* Sets a modern sans-serif font for the entire page. */
 }
 
 /* Title Styling */
 .title-container {
+  /* Positions the title at the top of the page and makes it span the entire width. */
   position: absolute;
-  top: 5%;
-  width: 100%;
-  text-align: center;
+  top: 5%; /* Places the title 5% from the top of the page. */
+  width: 100%; /* Ensures the title spans the entire page width. */
+  text-align: center; /* Centers the title text. */
 }
 
 .page-title {
-  font-family: "Luckiest Guy", sans-serif;
-  font-size: 8rem;
-  color: rgb(244, 226, 69);
-  margin: 0;
-  padding: 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /* Applies styling to the page title. */
+  font-family: "Luckiest Guy", sans-serif; /* Uses a playful font for the title. */
+  font-size: 8rem; /* Makes the title large and prominent. */
+  color: rgb(244, 226, 69); /* Sets a bright yellow color for visibility. */
+  margin: 0; /* Removes default margin. */
+  padding: 0; /* Removes padding. */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow to enhance readability against the background. */
 }
 
+/* Instrument Container Styling */
 .instrument-container {
-  position: relative;
-  width: 70%;
-  height: 45%;
-  display: grid;
+  /* Organizes the instruments in a grid layout. */
+  position: relative; /* Keeps the instruments positioned relative to the container. */
+  width: 70%; /* Limits the container width to 70% of the viewport. */
+  height: 45%; /* Sets a fixed height for the container. */
+  display: grid; /* Enables CSS Grid for precise layout. */
   grid-template-areas:
     "sax flute harmonica piano"
-    "violin drums bass guitar";
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  align-items: center;
-  column-gap: 3px;
-  row-gap: 70px;
-  padding: 0 40px;
+    "violin drums bass guitar"; /* Defines the layout areas for the instruments. */
+  grid-template-columns: repeat(4, 1fr); /* Creates four equal columns. */
+  justify-items: center; /* Centers each grid item horizontally. */
+  align-items: center; /* Centers each grid item vertically. */
+  column-gap: 3px; /* Sets space between columns. */
+  row-gap: 70px; /* Sets space between rows. */
+  padding: 0 40px; /* Adds padding on the left and right. */
 }
 
 /* Instrument Item Styling */
 .instrument-item {
-  position: relative;
-  text-align: center;
+  /* Styles each instrument block individually. */
+  position: relative; /* Keeps descriptions positioned relative to each item. */
+  text-align: center; /* Centers the text inside the item. */
 }
 
 .instrument-image {
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-  max-width: 100%;
+  /* Styles the instrument images. */
+  border-radius: 8px; /* Rounds the corners of the images for aesthetics. */
+  transition: transform 0.3s ease-in-out; /* Smoothly scales the image on hover. */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate interactivity. */
+  max-width: 100%; /* Prevents the images from exceeding their container size. */
 }
 
 .instrument-image:hover {
-  transform: scale(1.05);
+  /* Slightly enlarges the image on hover for a dynamic effect. */
+  transform: scale(1.05); /* Scales the image to 105% of its original size. */
 }
 
+/* Individual Image Size Adjustments */
 .instrument-image[data-instrument="drums"] {
-  width: 300px;
+  width: 300px; /* Increases size to reflect drums' prominence. */
 }
-
 .instrument-image[data-instrument="piano"] {
-  width: 350px;
+  width: 350px; /* Piano image gets extra width to maintain proportions. */
 }
-
 .instrument-image[data-instrument="guitar"] {
-  width: 160px;
+  width: 160px; /* Adjusted size for visual balance. */
 }
-
 .instrument-image[data-instrument="bass"] {
-  width: 160px;
+  width: 160px; /* Matches guitar size for consistency. */
 }
-
 .instrument-image[data-instrument="sax"] {
-  width: 150px;
+  width: 150px; /* Moderate size to suit its shape. */
 }
-
 .instrument-image[data-instrument="violin"] {
-  width: 90px;
+  width: 90px; /* Smaller size reflecting the instrument's delicate nature. */
 }
-
 .instrument-image[data-instrument="flute"] {
-  width: 140px;
+  width: 140px; /* Suitable size for a long, narrow instrument. */
 }
-
 .instrument-image[data-instrument="harmonica"] {
-  width: 120px;
+  width: 120px; /* Compact size for this small instrument. */
 }
 
 /* Description Styling */
 .instrument-description {
-  visibility: hidden;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 8px;
-  border-radius: 4px;
-  max-width: 300px;
-  width: 200%;
-  max-height: 200px;
-  overflow: auto;
-  text-align: center;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  /* Controls how descriptions are displayed on hover. */
+  visibility: hidden; /* Initially hides the description. */
+  position: absolute; /* Positions the description above the image. */
+  bottom: 100%; /* Places it directly above the image. */
+  left: 50%; /* Centers the description horizontally. */
+  transform: translateX(-50%); /* Fine-tunes centering alignment. */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adds a semi-transparent black background for readability. */
+  color: white; /* Makes the text white for contrast. */
+  padding: 8px; /* Adds space around the text. */
+  border-radius: 4px; /* Slightly rounds the corners. */
+  max-width: 300px; /* Limits the description width. */
+  width: 200%; /* Expands the width for better visibility. */
+  max-height: 200px; /* Prevents the description from getting too tall. */
+  overflow: auto; /* Adds scroll if content exceeds the height. */
+  text-align: center; /* Centers the text inside the description. */
+  opacity: 0; /* Makes it invisible initially. */
+  transition: visibility 0s, opacity 0.5s linear; /* Fades in the description smoothly. */
 }
 
 .instrument-item:hover .instrument-description {
+  /* Shows the description when the item is hovered. */
   visibility: visible;
   opacity: 1;
 }
 
 /* Instrument Name Styling */
 .instrument-name {
-  visibility: hidden;
-  position: absolute;
-  bottom: -30px; /* Adjust based on preference */
-  left: 50%;
-  transform: translateX(-50%);
-  color: white; /* Keep the text color white */
-  max-width: 200px;
-  text-align: center;
-  font-size: 18px; /* Adjust this value for larger font size */
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  /* Controls how instrument names are displayed. */
+  visibility: hidden; /* Initially hides the names. */
+  position: absolute; /* Positions the name below the image. */
+  bottom: -40px; /* Adjusts the position based on preference. */
+  left: 50%; /* Centers the name horizontally. */
+  transform: translateX(-50%); /* Fine-tunes the centering. */
+  color: rgb(244, 226, 69); /* Uses the same yellow color as the title. */
+  max-width: 200px; /* Limits the name's width. */
+  text-align: center; /* Centers the text inside the container. */
+  font-size: 20.5px; /* Sets an appropriate font size. */
+  font-weight: bold; /* Makes the text bold for emphasis. */
+  opacity: 0; /* Makes it invisible initially. */
+  transition: visibility 0s, opacity 0.5s linear; /* Fades in the name smoothly. */
 }
 
 .instrument-item:hover .instrument-name {
+  /* Shows the instrument name when the item is hovered. */
   visibility: visible;
   opacity: 1;
 }
