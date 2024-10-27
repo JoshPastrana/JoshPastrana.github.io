@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music class</title>
+    <title>Music Class</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="title-container">
-      <h1 class="page-title">Music Stage!!!</h1>
+      <h1 class="page-title">𝄞 Music Stage 𝄞</h1>
     </div>
 
     <div class="instrument-container">
@@ -73,41 +73,6 @@
         </div>
       </div>
 
-      <!-- Piano -->
-      <div class="instrument-item">
-        <img
-          src="piano.webp"
-          alt="Piano"
-          class="instrument-image"
-          data-instrument="piano"
-          tabindex="0"
-        />
-        <div class="instrument-description" id="piano-description">
-          <p>
-            The piano offers a rich and versatile sound, perfect for classical,
-            jazz, and pop. It's a favorite for both solo performances and
-            ensembles.
-          </p>
-        </div>
-      </div>
-
-      <!-- Drums -->
-      <div class="instrument-item">
-        <img
-          src="drums.png"
-          alt="Drums"
-          class="instrument-image"
-          data-instrument="drums"
-          tabindex="0"
-        />
-        <div class="instrument-description" id="drums-description">
-          <p>
-            These drums provide a rhythmic backbone with dynamic beats. Ideal
-            for energetic performances across genres like rock, jazz, and funk.
-          </p>
-        </div>
-      </div>
-
       <!-- Saxophone -->
       <div class="instrument-item">
         <img
@@ -126,7 +91,7 @@
         </div>
       </div>
 
-      <!-- Flute -->
+      <!-- Flute (Swapped with Drums) -->
       <div class="instrument-item">
         <img
           src="flute.png"
@@ -142,9 +107,61 @@
           </p>
         </div>
       </div>
+
+      <!-- Piano -->
+      <div class="instrument-item">
+        <img
+          src="piano.webp"
+          alt="Piano"
+          class="instrument-image"
+          data-instrument="piano"
+          tabindex="0"
+        />
+        <div class="instrument-description" id="piano-description">
+          <p>
+            The piano offers a rich and versatile sound, perfect for classical,
+            jazz, and pop. It's a favorite for both solo performances and
+            ensembles.
+          </p>
+        </div>
+      </div>
+
+      <!-- Drums (Swapped with Flute) -->
+      <div class="instrument-item">
+        <img
+          src="drums.png"
+          alt="Drums"
+          class="instrument-image"
+          data-instrument="drums"
+          tabindex="0"
+        />
+        <div class="instrument-description" id="drums-description">
+          <p>
+            These drums provide a rhythmic backbone with dynamic beats. Ideal
+            for energetic performances across genres like rock, jazz, and funk.
+          </p>
+        </div>
+      </div>
+
+      <!-- Harmonica -->
+      <div class="instrument-item">
+        <img
+          src="harmonica.png"
+          alt="Harmonica"
+          class="instrument-image"
+          data-instrument="harmonica"
+          tabindex="0"
+        />
+        <div class="instrument-description" id="harmonica-description">
+          <p>
+            The harmonica offers a unique, soulful sound and is often used in
+            blues, folk, and jazz. It’s easy to carry and great for spontaneous
+            performances.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <!-- Updated Audio Tags -->
     <audio id="guitar-sound" src="sound/guitar.mp3"></audio>
     <audio id="drums-sound" src="sound/drums.mp3"></audio>
     <audio id="piano-sound" src="sound/piano.mp3"></audio>
@@ -152,5 +169,6 @@
     <audio id="sax-sound" src="sound/sax.mp3"></audio>
     <audio id="violin-sound" src="sound/violin.mp3"></audio>
     <audio id="flute-sound" src="sound/flute.mp3"></audio>
+    <audio id="harmonica-sound" src="sound/harmonica.mp3"></audio>
   </body>
 </html>
