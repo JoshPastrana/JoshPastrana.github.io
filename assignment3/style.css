@@ -1,55 +1,60 @@
 /* Body Styling */
 body {
-  /* Sets a background image for the page and defines how it behaves. */
+  /* Sets a background image for the page and defines how it behaves. I found a nice image online of a red stage to capture the feel of the musical stage.
+  It has a nice design with the curtains and colours all complimenting each other */
   background-image: url("red stage.jpg");
-  background-size: 100% var(--bg-height, 120vh); /* Ensures the background covers the full width and uses CSS variables for height flexibility. */
-  background-position: center; /* Centers the background image to maintain focus. */
-  background-repeat: no-repeat; /* Prevents the image from repeating horizontally or vertically. */
-  background-attachment: fixed; /* Keeps the background in place when scrolling. */
-  margin: 0; /* Removes default browser margin for consistent layout. */
-  padding: 0; /* Removes padding to avoid extra space around the content. */
-  height: 100vh; /* Ensures the body takes up the full height of the viewport. */
+  /*Used a free to use image found on pexels*/
+  background-size: 100% var(--bg-height, 120vh); /* Ensures the background covers the full width and to my liking, keepinng it a nice measure to put all the instruments between
+  both curtains to show thats the focus of attention
+  background-position: center; /* Centering the background image to maintain focus. */
+  background-repeat: no-repeat; /* To prevent the image from repeating horizontally or vertically. */
   overflow: hidden; /* Prevents scrollbars from appearing. */
   display: flex; /* Uses Flexbox to align child elements. */
   justify-content: center; /* Centers content horizontally. */
   align-items: center; /* Centers content vertically. */
-  font-family: "Space Grotesk", sans-serif; /* Sets a modern sans-serif font for the entire page. */
+  font-family: "Space Grotesk", sans-serif; /* Sets a modern sans-serif font for the entire page. I decided to use
+  space grotesk as it was a very simple and easy to read code. this will make the displayed information more readable */
 }
 
 /* Title Styling */
 .title-container {
   /* Positions the title at the top of the page and makes it span the entire width. */
   position: absolute;
-  top: 5%; /* Places the title 5% from the top of the page. */
-  width: 100%; /* Ensures the title spans the entire page width. */
-  text-align: center; /* Centers the title text. */
+  top: 5%; /* Places the title 5% from the top of the page. Keeping oit around that % so its not to high or low at the top */
+  text-align: center; /* Centering the title text right in the middle to make it matching and precise. */
 }
 
 .page-title {
   /* Applies styling to the page title. */
-  font-family: "Luckiest Guy", sans-serif; /* Uses a playful font for the title. */
-  font-size: 8rem; /* Makes the title large and prominent. */
-  color: rgb(244, 226, 69); /* Sets a bright yellow color for visibility. */
-  margin: 0; /* Removes default margin. */
-  padding: 0; /* Removes padding. */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow to enhance readability against the background. */
+  font-family: "Luckiest Guy", sans-serif; /* Used a playful font for the title. Once again I really like how it was  */
+  font-size: 8rem; /* Makes the title large and prominent capturing their attention. */
+  color: rgb(
+    244,
+    226,
+    69
+  ); /* Sets a bright yellow color for visibility. I wanted this to mtch the some of the yellow ropes in teh backhround
+  this makes it blend well and give it a nice big title feeling */
 }
 
-/* Instrument Container Styling */
+/* Instrument Container Styling for all the intruments I put together */
 .instrument-container {
   /* Organizes the instruments in a grid layout. */
   position: relative; /* Keeps the instruments positioned relative to the container. */
   width: 70%; /* Limits the container width to 70% of the viewport. */
-  height: 45%; /* Sets a fixed height for the container. */
-  display: grid; /* Enables CSS Grid for precise layout. */
+  height: 45%; /* Sets a fixed height for the containe only keeping the insturments in here. */
+  display: grid; /* Enables CSS Grid for precise layout so they have there own space */
   grid-template-areas:
     "sax flute harmonica piano"
-    "violin drums bass guitar"; /* Defines the layout areas for the instruments. */
-  grid-template-columns: repeat(4, 1fr); /* Creates four equal columns. */
+    "violin drums bass guitar"; /* This template defines the layout areas for the instruments. */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Creates four equal columns for the instruments. */
   justify-items: center; /* Centers each grid item horizontally. */
   align-items: center; /* Centers each grid item vertically. */
-  column-gap: 3px; /* Sets space between columns. */
-  row-gap: 70px; /* Sets space between rows. */
+  column-gap: 3px; /* Sets space between the columns so the intruments are not so close to each other giving a nice space
+  to distinct between each other. */
+  row-gap: 70px; /* Sets space between rows, once again so they are not close to each. */
   padding: 0 40px; /* Adds padding on the left and right. */
 }
 
@@ -62,7 +67,6 @@ body {
 
 .instrument-image {
   /* Styles the instrument images. */
-  border-radius: 8px; /* Rounds the corners of the images for aesthetics. */
   transition: transform 0.3s ease-in-out; /* Smoothly scales the image on hover. */
   cursor: pointer; /* Changes the cursor to a pointer to indicate interactivity. */
   max-width: 100%; /* Prevents the images from exceeding their container size. */
@@ -70,10 +74,13 @@ body {
 
 .instrument-image:hover {
   /* Slightly enlarges the image on hover for a dynamic effect. */
-  transform: scale(1.05); /* Scales the image to 105% of its original size. */
+  transform: scale(
+    1.05
+  ); /* Scales the image to 105% of its original size notifying the user what they are hovering over. */
 }
 
-/* Individual Image Size Adjustments */
+/* Individual Image Size Adjustments, sticking to a more realistic sizing such as making the drums and piano bigger as they big intruments, and the flute, harmonica, violin etc smaller.
+Giving an understanding of what the instrument sizes are like in real life */
 .instrument-image[data-instrument="drums"] {
   width: 300px; /* Increases size to reflect drums' prominence. */
 }
@@ -81,16 +88,16 @@ body {
   width: 350px; /* Piano image gets extra width to maintain proportions. */
 }
 .instrument-image[data-instrument="guitar"] {
-  width: 160px; /* Adjusted size for visual balance. */
+  width: 160px; /* Simliar size to bass. */
 }
 .instrument-image[data-instrument="bass"] {
   width: 160px; /* Matches guitar size for consistency. */
 }
 .instrument-image[data-instrument="sax"] {
-  width: 150px; /* Moderate size to suit its shape. */
+  width: 150px; /* Moderate size to suit its shape and proportions. */
 }
 .instrument-image[data-instrument="violin"] {
-  width: 90px; /* Smaller size reflecting the instrument's delicate nature. */
+  width: 90px; /* Smaller size. */
 }
 .instrument-image[data-instrument="flute"] {
   width: 140px; /* Suitable size for a long, narrow instrument. */
