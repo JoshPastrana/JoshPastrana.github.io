@@ -106,7 +106,7 @@ Giving an understanding of what the instrument sizes are like in real life */
   width: 120px; /* Compact size for this small instrument. */
 }
 
-/* Description Styling */
+/* Description Styling for instruments */
 .instrument-description {
   /* Controls how descriptions are displayed when the mouse hovers. */
   visibility: hidden; /* Initially hides the description until shown. */
@@ -132,6 +132,7 @@ Giving an understanding of what the instrument sizes are like in real life */
   opacity: 0; /* Makes it invisible initially. */
   transition: visibility 0s, opacity 0.5s linear; /* Fades in the description smoothly following the smooth and modern design. */
 }
+/* had some issues configuring the code for instrument description so I used chatgpt to help arrange and set the instrument desc design for it to work properly */
 
 .instrument-item:hover .instrument-description {
   /* Shows the description when the item is hovered. */
