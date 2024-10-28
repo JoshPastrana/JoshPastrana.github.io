@@ -108,28 +108,29 @@ Giving an understanding of what the instrument sizes are like in real life */
 
 /* Description Styling */
 .instrument-description {
-  /* Controls how descriptions are displayed on hover. */
-  visibility: hidden; /* Initially hides the description. */
-  position: absolute; /* Positions the description above the image. */
-  bottom: 100%; /* Places it directly above the image. */
-  left: 50%; /* Centers the description horizontally. */
+  /* Controls how descriptions are displayed when the mouse hovers. */
+  visibility: hidden; /* Initially hides the description until shown. */
+  position: absolute; /* Positions the description above the image so they can have a clear view of what it looks like whilst reading the info. */
+  bottom: 100%;
+  left: 50%;
   transform: translateX(-50%); /* Fine-tunes centering alignment. */
   background-color: rgba(
     0,
     0,
     0,
     0.7
-  ); /* Adds a semi-transparent black background for readability. */
-  color: white; /* Makes the text white for contrast. */
+  ); /* Adds a semi-transparent black background for readability I didnt want any overpowering colours so leaving
+  it transparent was a good idea. */
+  color: white; /* Makes the text white for contrast and easy readability. */
   padding: 8px; /* Adds space around the text. */
-  border-radius: 4px; /* Slightly rounds the corners. */
+  border-radius: 4px; /* Slightly rounds the corners for a modern design and less sharp. */
   max-width: 300px; /* Limits the description width. */
   width: 200%; /* Expands the width for better visibility. */
   max-height: 200px; /* Prevents the description from getting too tall. */
-  overflow: auto; /* Adds scroll if content exceeds the height. */
+  overflow: auto; /* In case scroll is needed if content exceeds the height, if any browser issues arise. */
   text-align: center; /* Centers the text inside the description. */
   opacity: 0; /* Makes it invisible initially. */
-  transition: visibility 0s, opacity 0.5s linear; /* Fades in the description smoothly. */
+  transition: visibility 0s, opacity 0.5s linear; /* Fades in the description smoothly following the smooth and modern design. */
 }
 
 .instrument-item:hover .instrument-description {
@@ -140,23 +141,28 @@ Giving an understanding of what the instrument sizes are like in real life */
 
 /* Instrument Name Styling */
 .instrument-name {
-  /* Controls how instrument names are displayed. */
-  visibility: hidden; /* Initially hides the names. */
-  position: absolute; /* Positions the name below the image. */
+  /* Controls how instrument names are displayed very similar to the instrument description. */
+  visibility: hidden;
+  position: absolute;
   bottom: -40px; /* Adjusts the position based on preference. */
   left: 50%; /* Centers the name horizontally. */
   transform: translateX(-50%); /* Fine-tunes the centering. */
-  color: rgb(244, 226, 69); /* Uses the same yellow color as the title. */
+  color: rgb(
+    244,
+    226,
+    69
+  ); /* Uses the same yellow color as the title, captures the users attention and gives sign of importance.
+  Also helps distinct between the description text */
   max-width: 200px; /* Limits the name's width. */
   text-align: center; /* Centers the text inside the container. */
-  font-size: 20.5px; /* Sets an appropriate font size. */
-  font-weight: bold; /* Makes the text bold for emphasis. */
+  font-size: 20.5px; /* Sets an appropriate font size, bigger than description text */
+  font-weight: bold; /* Makes the text bold for emphasis and helps make easier to see. */
   opacity: 0; /* Makes it invisible initially. */
   transition: visibility 0s, opacity 0.5s linear; /* Fades in the name smoothly. */
 }
 
 .instrument-item:hover .instrument-name {
-  /* Shows the instrument name when the item is hovered. */
+  /* Shows the instrument name when the item is hovered. so they know what that specific instrument name is */
   visibility: visible;
   opacity: 1;
 }
